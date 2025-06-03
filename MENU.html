@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú del Sistema de Talleres Escolares</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .menu {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    details {
+      margin-bottom: 10px;
+    }
+    summary {
+      font-weight: bold;
+      font-size: 1.1em;
+      cursor: pointer;
+      padding: 10px;
+      background-color: #e0e0e0;
+      border-radius: 5px;
+    }
+    ul {
+      padding-left: 20px;
+      list-style-type: square;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sistema de Gestión de Talleres Escolares</h1>
+  <div class="menu">
+    <details>
+      <summary>1. Gestión de Usuarios</summary>
+      <ul>
+        <li>Crear Usuario</li>
+        <li>Editar Usuario</li>
+        <li>Eliminar Usuario</li>
+        <li>Listar / Buscar Usuarios
+          <ul>
+            <li>Por Documento</li>
+            <li>Por Apellido/Nombre</li>
+            <li>Por Tipo de Usuario</li>
+            <li>Filtros Específicos:
+              <ul>
+                <li>Estudiantes por Curso o Taller</li>
+                <li>Personal por Rol/Cargo</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>2. Gestión de Herramientas y Máquinas</summary>
+      <ul>
+        <li>Registrar Nueva Herramienta/Máquina</li>
+        <li>Editar Herramienta/Máquina</li>
+        <li>Eliminar Herramienta/Máquina</li>
+        <li>Cambiar Estado</li>
+        <li>Listar / Buscar Herramientas
+          <ul>
+            <li>Por Nombre</li>
+            <li>Por Tipo</li>
+            <li>Por Estado</li>
+            <li>Por Ubicación</li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>3. Gestión de Mantenimientos</summary>
+      <ul>
+        <li>Registrar Mantenimiento</li>
+        <li>Editar Mantenimiento</li>
+        <li>Ver Historial de Mantenimientos
+          <ul>
+            <li>Por Herramienta/Máquina</li>
+            <li>Por Rango de Fechas</li>
+            <li>Por Tipo de Mantenimiento</li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>4. Gestión de Asignaciones / Préstamos</summary>
+      <ul>
+        <li>Registrar Préstamo</li>
+        <li>Registrar Devolución (con Observaciones)</li>
+        <li>Historial de Asignaciones
+          <ul>
+            <li>Por Usuario</li>
+            <li>Por Herramienta/Máquina</li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>5. Reportes (Iteración Futura)</summary>
+      <ul>
+        <li>Uso de Herramientas/Máquinas
+          <ul>
+            <li>Más utilizadas</li>
+            <li>Por Usuario</li>
+            <li>Por Herramienta</li>
+          </ul>
+        </li>
+        <li>Herramientas Asignadas</li>
+        <li>Estado de Herramientas</li>
+        <li>Mantenimiento
+          <ul>
+            <li>Próximos/Vencidos</li>
+            <li>Costos por herramienta / Total</li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>6. Configuración / Salir</summary>
+      <ul>
+        <li>Configuración General (futura)</li>
+        <li>Guardar Cambios</li>
+        <li>Salir del Sistema</li>
+      </ul>
+    </details>
+  </div>
+</body>
+</html>
